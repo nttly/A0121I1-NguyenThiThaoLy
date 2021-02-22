@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="hobbies">
+<form>
+
+<h1 style="background-color: red;color: white;text-align: center">SỞ THÍCH CỦA BẠN</h1>
+
+<p>Họ và tên : <input type="text" name="HoTen"></p>
+<p>Email: <input type="email" name="Email"></p>
+<p>Sở thích: <table>
+    <tr>
+        <td><input type="checkbox" name="thethao" value="TheThao"> Thể Thao &emsp;</td>
+        <td><input type="checkbox" name="AmNhac" value="AmNhac"> Âm Nhạc &emsp;</td>
+        <td><input type="checkbox" name="docsach" value="DocSach"> Đọc Sách </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="luotweb" value="LuotWeb"> Lướt Web &emsp;</td>
+        <td><input type="checkbox" name="choigame" value="ChoiGame"> Chơi Game &emsp;</td>
+        <td><input type="checkbox" name="dienanh" value="DienAnh"> Điện Ảnh <br></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="dulich" value="DuLich"> Du Lịch &emsp;</td>
+    </tr>
+</table>
+</p>
+    <input type="submit" name="guithongtin" value="Gửi thông tin" style="background-color: darkgray">  &nbsp;
+    <input type="reset" name="nhaplai" value="Nhập lại"style="background-color: darkgray">
+    <style>
+        .hobbies{
+            border-radius: 5px;
+            background-color: pink;
+            padding: 50px;
+            width: 30% ;
+        }
+    </style>
+</form>
+</div>
+<br>
+<div class="container">
+<form>
+    <h1 style="background-color:cornflowerblue;color:darkblue">ĐĂNG KÍ HỌC VIÊN</h1>
+    <p>Họ và tên : <input type="text" name="HoTen"></p>
+    <p>Ngày sinh: <input type="date" name="ngaysinh" ></p>
+    <p>Giới tính:
+        <input type="radio" name="person" value="Nam">Nam
+        <input type="radio" name="person" value="Nữ">Nữ
+    </p>
+    <p>Đại chỉ: <input type="textarea" name="diachi"></p>
+    <p>Lớp:
+    <select name="lop" value="-Chọn lớp-" >
+        <option value="lop1">Lớp 1</option>
+        <option value="lop2">Lớp 2</option>
+        <option value="lơp3">Lớp 3</option>
+    </select>
+    </p>
+    <p>Email: <input type="email" name="Email"></p>
+    <p>Điện thoại: <input type="tel" name="dienthoai"></p>
+    <input type="submit" name="dangky" value="Đăng kí"style="background-color: darkgray">
+    <input type="reset" name="nhaplai" value="Nhập lại"style="background-color: darkgray">
+    <style>
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 50px;
+            width: 30% ;
+        }
+    </style>
+</form>
+</div>
+</body>
+</html>
