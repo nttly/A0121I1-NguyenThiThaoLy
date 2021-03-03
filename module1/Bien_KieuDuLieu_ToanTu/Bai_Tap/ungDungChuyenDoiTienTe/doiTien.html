@@ -2,9 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<table>
+    <tr>
+        <th style="width: 30%">Amount</th>
+        <th style="width: 30%">Currency</th>
+        <th style="width: 30%">To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td style="text-align: center"><input name="tien" type="text" id="money"></td>
+        <td style="text-align: center"><select name="currency" id="fromCurrency">
+            <option value="vnd"> VietNam</option>
+            <option value="usd">USD</option>
+            <option value="eur">Euro</option>
+            <option value="pound">Bảng Anh</option>
+        </select>
+        </td>
+
+        <td style="text-align: center"><select name="tocurrency" id="toCurrency">
+            <option value="usd">USD</option>
+            <option value="vnd"> VietNam</option>
+            <option value="eur">Euro</option>
+            <option value="pound">Bảng Anh</option>
+        </select>
+        </td>
+        <td>
+            <button type="button" onclick="result();" style="background-color: indianred" id="changemoney">Convert
+            </button>
+        </td>
+    </tr>
+</table>
+<p id="result"></p>
+<script>
+    function result() {
+        let money = document.getElementById("money").value;
+        let fromCurrency = document.getElementById("fromCurrency").value;
+        let toCurrency = document.getElementById("toCurrency").value;
+        let changemoney = document.getElementById("changemoney");
+        alert(money);
+        alert(fromCurrency);
+        alert(toCurrency);
+        if (fromCurrency == "vnd" && toCurrency == "usd") {
+            changemoney = "result:" + money / 23000;
+        } else if (fromCurrency == "vnd" && toCurrency == "eur") {
+            changemoney = "result:" + money * 0.000036;
+        } else if (fromCurrency == "vnd" && toCurrency == "pound") {
+            changemoney = "result:" + money * 0.000031;
+        } else if (fromCurrency == "usd" && toCurrency == "vnd") {
+            changemoney = "result:" + money * 23000;
+        }
+        if (fromCurrency == "usd" && toCurrency == "eur") {
+            changemoney = "result:" + money * 0, 82;
+        } else if (fromCurrency == "usd" && toCurrency == "pound") {
+            changemoney = "result:" + money * 0.71;
+        } else if (fromCurrency == "eur" && toCurrency == "vnd") {
+            changemoney = "result:" + money / 0.000036;
+        } else if (fromCurrency == "eur" && toCurrency == "usd") {
+            changemoney = "result:" + money / 0.82;
+        } else if (fromCurrency == "eur" && toCurrency == "pound") {
+            changemoney = "result:" + money * 0.86;
+        } else if (fromCurrency == "pound" && toCurrency == "vnd") {
+            changemoney = "result:" + money / 0.000031
+        } else if (fromCurrency == "pound" && toCurrency == "usd") {
+            changemoney = "result:" + money / 0.71;
+        } else if (fromCurrency == "pound" && toCurrency == "eur") {
+            changemoney = "result:" + money / 0.86;
+        }
+        document.getElementById("result").innerHTML=changemoney;
+
+    }
+</script>
 </body>
 </html>

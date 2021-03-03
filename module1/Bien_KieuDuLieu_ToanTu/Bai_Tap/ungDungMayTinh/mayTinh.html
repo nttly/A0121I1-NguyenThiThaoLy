@@ -2,9 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h2>Caculator</h2>
+<table>
+    <tr>
+        <th><input  type="text" id="first"></th>
+        <th><input  type="text" id="second"></th>
+    </tr>
+
+</table>
+<table>
+    <tr>
+        <th><button type="button" onclick="addition()" id="addition1">Addtion(+)</button></th>
+        <th><button type="button" onclick="subtraction()" id="subtraction1">Subtraction(-)</button></th>
+        <th><button type="button" onclick="multiplication()" id="multiplication1">Multiplication(X)</button></th>
+        <th><button type="button" onclick="division()"id="division1">Division(/)</button></th>
+    </tr>
+</table>
+<p id="result"></p>
+<script>
+    function addition() {
+        let first1 = document.getElementById("first").value;
+        let second2 = document.getElementById("second").value;
+        let result = document.getElementById("addition1");
+        let result1;
+        alert(first1);
+        alert(second2);
+        result=parseInt(first1)+parseInt(second2);
+        result1="Result Division:"+result;
+        document.getElementById("result").innerHTML=result1;
+    }
+    function subtraction() {
+        let first1 = document.getElementById("first").value;
+        let second2 = document.getElementById("second").value;
+        let result = document.getElementById("addition1");
+        let result1;
+        alert(first1);
+        alert(second2);
+        result=parseInt(first1)-parseInt(second2);
+        result1="Result Division:"+result;
+        document.getElementById("result").innerHTML=result1;
+    }
+    function multiplication() {
+        let first1 = document.getElementById("first").value;
+        let second2 = document.getElementById("second").value;
+        let result = document.getElementById("addition1");
+        let result1;
+        alert(first1);
+        alert(second2);
+        result=parseInt(first1)*parseInt(second2);
+        result1="Result Division:"+result;
+        document.getElementById("result").innerHTML=result1;
+    }
+    function division() {
+        let first1 = document.getElementById("first").value;
+        let second2 = document.getElementById("second").value;
+        let result = document.getElementById("addition1");
+        let result1;
+        alert(first1);
+        alert(second2);
+
+        if (second2 != 0 )
+        {
+            result=parseInt(first1)/parseInt(second2);
+            result1="Result Division:"+result;
+        }
+        else
+        {
+            result1="<h3>Result Division:not value</h3>";
+        }
+        document.getElementById("result").innerHTML=result1;
+    }
+
+</script>
 </body>
 </html>

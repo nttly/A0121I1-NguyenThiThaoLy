@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    var inputDLy = prompt("Nhap điểm môn Vật Lý:");
+    var inputDHoa = prompt("Nhập điểm môn Hóa Học:");
+    var inputDSinh = prompt("Nhập điểm môn Sinh Học");
+    var DLy = parseInt(inputDLy);
+    var DHoa=parseInt(inputDHoa);
+    var DSinh=parseInt(inputDSinh);
+    var DTB = (DLy+DHoa+DSinh)/3;
+    document.write("Điểm trung bình là:"+DTB);
+    document.write("<br/>")
+    var Tong = DSinh+DHoa+DLy;
+    document.write("Tổng điểm là:"+Tong);
+</script>
 </body>
 </html>
