@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<table border="1"><p id="result1"></p></table>
+    <table >
+    <tr>
+        <th  style="width: 50px;height: 40px"><input type="button" value="1" onclick="ham1()"></th>
+        <th  style="width: 50px;"><input type="button" value="2" onclick="ham2()"></th>
+        <th  style="width: 50px;"><input type="button" value="3" onclick="ham3()"></th>
+        <th  style="width: 50px;"><input type="button" value="+" onclick="hamcong()"></th>
+    </tr>
+    <tr>
+        <th  style="height: 40px"><input type="button" value="4" onclick="ham4()"></th>
+        <th ><input type="button" value="5" onclick="ham5()"></th>
+        <th ><input type="button" value="6" onclick="ham6()"></th>
+        <th ><input type="button" value="-" onclick="hamtru()"></th>
+    </tr>
+    <tr>
+        <th  style="height: 40px"><input type="button" value="7" onclick="hamnhan()"></th>
+        <th ><input type="button" value="8" onclick="ham8()"></th>
+        <th ><input type="button" value="9" onclick="ham9()"></th>
+        <th ><input type="button" value="*" onclick="hamnhan()"></th>
+    </tr>
+    <tr>
+        <th  style="height: 40px"><input type="button" value="C" onclick="hamC()"></th>
+        <th ><input type="button" value="0" onclick="ham0()"></th>
+        <th><input type="button" value="=" onclick="result()"></th>
+        <th ><input type="button" value="/" onclick="hamchia()"></th>
+    </tr>
+    </table>
+<script>
+function ham1() {
+    document.getElementById("result1").innerHTML = document.getElementById("result1").textContent+"1";
+}
+function ham2() {
+    document.getElementById("result1").innerHTML = document.getElementById("result1").textContent+"2";
+}
+function ham3() {
+    document.getElementById("result1").innerHTML = document.getElementById("result1").textContent+"3";
+}
+function ham4() {
+    document.getElementById("result1").innerHTML = document.getElementById("result1").textContent+"4";
+}
+function ham5() {
+    document.getElementById("result1").innerHTML = document.getElementById("result1").textContent+"5";
+}
+function ham6() {
+    document.getElementById("result1").innerHTML = document.getElementById("result1").textContent+"6";
+}
+function ham7() {
+    document.getElementById("result1").innerHTML = document.getElementById("result1").textContent+"7";
+}
+function ham8() {
+    document.getElementById("result1").innerHTML = document.getElementById("result1").textContent+"8";
+}
+function ham9() {
+    document.getElementById("result1").innerHTML = document.getElementById("result1").textContent+"9";
+}
+function ham0() {
+    document.getElementById("result1").innerHTML = document.getElementById("result1").textContent+"0";
+}
+function hamcong() {
+    document.getElementById("result1").innerHTML = document.getElementById("result1").textContent+"+";
+}
+function hamtru() {
+    document.getElementById("result1").innerHTML = document.getElementById("result1").textContent+"-";
+}
+function hamnhan() {
+    document.getElementById("result1").innerHTML = document.getElementById("result1").textContent+"*";
+}
+function hamchia() {
+    document.getElementById("result1").innerHTML = document.getElementById("result1").textContent+"/";
+}
+function hamC() {
+    document.getElementById("result1").innerHTML = "";
+}
+function result() {
+    let ketqua;
+    ketqua= eval(document.getElementById("result1").textContent)
+    document.getElementById("result1").innerHTML = ketqua;
+}
+
+</script>
+
+</body>
+</html>

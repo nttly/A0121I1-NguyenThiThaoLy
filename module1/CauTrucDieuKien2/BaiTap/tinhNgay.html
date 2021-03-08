@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>
+            <input type="text" name="thang" id="month">
+        </th>
+        <th>
+            <input type="button" onclick="doi()" value="Tính số ngày" >
+        </th>
+    </tr>
+</table>
+<p id="result"></p>
+<script>
+    function doi(){
+    let month = Number(document.getElementById("month").value);
+        switch (month) {
+            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                document.getElementById('result').innerHTML="tháng "+month+"có 31 ngày";
+                break;
+            case 4: case 6: case 9: case 11:
+                document.getElementById('result').innerHTML="tháng "+month+"có 30 ngày";
+                break;
+            case 2:
+                document.getElementById('result').innerHTML="tháng "+month+"có 29 ngày hoặc 28 ngày";
+                break;
+            default:
+                document.getElementById('result').innerHTML="tháng không hợp lệ";
+
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let sanpham=parseInt(prompt("nhập số lượng sản phẩm bán ra:"));
+   let money;
+   if (sanpham<1000){
+       money=sanpham*100000*0.1;
+   }
+   else if (sanpham>=1000 && sanpham<2000){
+       money=sanpham*100000*0.2;
+   }
+   else {
+       money=sanpham*100000*0.3;
+   }
+   document.write("so tiền hoa hồng nhận được khi bán"+sanpham+" sản phẩm là: " +money);
+</script>
+</body>
+</html>

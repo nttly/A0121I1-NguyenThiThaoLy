@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemKT=parseInt(prompt("Nhap điểm kiểm tra:"));
+    let diemGK=parseInt(prompt("Nhập điểm giữa kì:"));
+    let diemCK=parseInt(prompt("Nhập điểm cuối kì:"));
+    let trungbinh=(diemKT+(diemGK*2)+(diemCK*3))/6;
+    if (trungbinh<6.5){
+        alert("học sinh trung bình");
+    }
+    else if (6.5<=trungbinh && trungbinh<8){
+        alert("học sinh khá");
+
+    }
+    else {
+        alert("hoc sinh giỏi");
+    }
+</script>
+</body>
+</html>

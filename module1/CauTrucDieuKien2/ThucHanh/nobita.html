@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<body onload="docReady()">
 
-<img src="imges/nobita.jpg.jpg" style="position: absolute;left: 0;top:0;" height="380" width="320"/>
+<img id="nobita" src="imges/nobita.jpg.jpg" style="position: absolute;left: 0;top:0;" height="380" width="320"/>
 <script>
     function upArrowPressed() {
         let element = document.getElementById("nobita");
@@ -25,7 +25,26 @@
         var element = document.getElementById("nobita");
         element.style.left=parseInt(element.style.left)+5+'px';
     }
-    fu
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 38:
+                upArrowPressed();
+                break;
+            case 40:
+                downArrowPressed();
+                break;
+        }
+    }
+    function docReady() {
+        window.addEventListener('keydown',moveSelection);
+    }
+
 </script>
 </body>
 </html>

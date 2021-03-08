@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=prompt("nhap vao cạnh a:");
+    let b=prompt("nhap vao cạnh b:");
+    let c=prompt("nhap vao cạnh c:");
+    if(a>0 && b>0 && c>0){
+        if ((a+b)>c && (a+c)>b && (b+c)>a)
+        {
+            alert(" 3 cạnh đó tương ứng với độ dài ba cạnh của tam giác");
+
+        }
+        else
+        {
+            alert("3 số đó không phải là độ dài của 3 cạnh tam giác");
+        }
+    }
+    else
+        alert("3 số đó không phải là độ dài của 3 cạnh tam giác");
+</script>
+</body>
+</html>
