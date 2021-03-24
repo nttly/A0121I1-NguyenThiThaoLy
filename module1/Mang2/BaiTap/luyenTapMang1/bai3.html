@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = [4,6,4,10,6];
+    let max=str[0];
+    let tb=1;
+    let sum=0;
+    for (let i=0;i<str.length;i++) {
+        if (str[i] > max) {
+            max = str[i];
+        }
+        sum += str[i];
+        tb = sum/str.length;
+
+    }
+    document.write(max+"<br/>");
+    document.write(tb);
+
+</script>
+</body>
+</html>

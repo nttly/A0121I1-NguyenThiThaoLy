@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function giaiThua(n) {
+        let result=1;
+        for (let i=n;i>=1;i--){
+            result *= i;
+        }
+        return result;
+    }
+    let n=parseInt(prompt("Nhập vào giá trị n= "));
+
+    alert(n+"! = "+giaiThua(n));
+</script>
+</body>
+</html>

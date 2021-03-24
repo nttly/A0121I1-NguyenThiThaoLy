@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function footToMeter(foot) {
+        let resultMeter= 0.305*foot;
+        return resultMeter;
+    }
+    function meterToFoot(meter) {
+        let resultFoot=3.279*meter;
+        return resultFoot;
+    }
+    let foot =parseInt(prompt("Nhập vào giá trị Feet: "));
+    let meter= parseInt(prompt("Nhập vào giá trị Meters: "));
+    let result1= footToMeter(foot);
+    let result2=meterToFoot(meter);
+    document.write(foot+" feet = "+result1+"  meters"+"<br/>");
+    document.write(meter+" meter = "+result2+ " feet");
+</script>
+</body>
+</html>

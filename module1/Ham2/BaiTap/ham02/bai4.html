@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTra(n) {
+        if (n>='0' && n<='9')
+            return true;
+        else
+            return false;
+    }
+    let n = prompt("Nhập vào giá trị cần kiểm tra:");
+    let result = kiemTra(n);
+    if (result==true){
+        alert(n+" Là kí tự số");
+    }
+    else {
+        alert(n+"Không phải là kí tự số");
+    }
+</script>
+</body>
+</html>
