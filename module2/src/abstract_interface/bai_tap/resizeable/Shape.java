@@ -1,8 +1,9 @@
-package abstract_interface.thuc_hanh.comparable;
+package abstract_interface.bai_tap.resizeable;
 
-public class Shape {
+public abstract class Shape implements Resizeable {
     private String color = "green";
     private boolean filled = true;
+
 
     public Shape() {
     }
@@ -36,12 +37,14 @@ public class Shape {
                 + (isFilled() ? "filled" : "not filled");
     }
 
-    public void resize(double floor) {
-        return;
+    public static void printShape(Shape[] shape) {
+        for (Shape x : shape) {
+            System.out.println(x.toString());
+        }
     }
 
 
-    public double getArea() {
+    public double getArea(){
         return 0;
-    }
+    };
 }

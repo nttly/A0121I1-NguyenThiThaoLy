@@ -1,4 +1,4 @@
-package abstract_interface.thuc_hanh.comparable;
+package abstract_interface.bai_tap.resizeable;
 
 public class Circle extends Shape {
     private double radius = 1.0;
@@ -13,9 +13,6 @@ public class Circle extends Shape {
     public Circle(double radius, String color, boolean filled) {
         super(color, filled);
         this.radius = radius;
-    }
-
-    public Circle(String s, String red, boolean filled) {
     }
 
     public double getRadius() {
@@ -40,5 +37,10 @@ public class Circle extends Shape {
                 + getRadius()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+        this.radius *= (percent / 200);
     }
 }
