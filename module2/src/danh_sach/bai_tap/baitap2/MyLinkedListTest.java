@@ -1,4 +1,4 @@
-package danh_sach.bai_tap.linked_list;
+package danh_sach.bai_tap.baitap2;
 
 public class MyLinkedListTest {
     public static void main(String[] args) {
@@ -15,4 +15,5 @@ public class MyLinkedListTest {
             System.out.println(shapeMyLinkedList.get(i).toString());
         }
     }
+
 }

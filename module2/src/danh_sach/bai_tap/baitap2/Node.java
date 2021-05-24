@@ -1,4 +1,4 @@
-package danh_sach.bai_tap.linked_list;
+package danh_sach.bai_tap.baitap2;
 
 public class Node {
     Node next;
@@ -11,4 +11,5 @@ public class Node {
     public Object getData() {
         return this.data;
     }
+
 }

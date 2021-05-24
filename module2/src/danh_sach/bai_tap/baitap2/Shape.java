@@ -1,4 +1,4 @@
-package danh_sach.bai_tap.linked_list;
+package danh_sach.bai_tap.baitap2;
 
 public class Shape {
     private String name;
@@ -35,4 +35,5 @@ public class Shape {
                 ", describe='" + describe + '\'' +
                 '}';
     }
+
 }
